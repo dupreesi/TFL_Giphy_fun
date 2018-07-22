@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+}
+
+body,
+.header,
+.line-select,
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*SKIP BUTTONS*/
+
+.skipButtons {
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.logo {
+  height: 7rem;
+  display: flex;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  font-size: 2.5rem;
+}
+
+select,
+input {
+  margin: 8px 0px;
+  width: 24rem;
+}
+
+.hidden {
+  display: none;
+}
+
+header {
+  margin: 24px 0px;
+  width: 24rem;
+}
+
+svg {
+  height: 128px;
+}
+
+input[type="submit"] {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1rem;
+  color: white;
+  background-color: rgba(17, 59, 146, 1);
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+}

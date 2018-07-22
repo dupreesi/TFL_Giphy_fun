@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TFL</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <header>
+        <img src="logo.svg" class="logo" id="tflphy-logo" alt="Tfl logo official">
+    </header>
+
+    <div class="input-form">
+        <form class="line-select" id="line-select" action="">
+            <select id="tube-lines" name="tube-lines" required>
+                <option value="" id="default">--</option>
+                <option value="bakerloo" id="bakerloolist">Bakerloo</option>
+                <option value="central" id="centrallist">Central</option>
+                <option value="circle" id="circlelist">Circle</option>
+                <option value="district" id="districtlist">District</option>
+                <option value="hammersmith-city" id="handclist">Hammersmith & City</option>
+                <option value="jubilee" id="jubileelist">Jubilee</option>
+                <option value="metropolitan" id="metrolist">Metropolitan</option>
+                <option value="northern" id="northernlist">Northern</option>
+                <option value="piccadilly" id="piccadillylist">Piccadilly</option>
+                <option value="victoria" id="victorialist">Victoria</option>
+                <option value="waterloo-city" id="wandclist">Waterloo & City</option>
+                <option value="london-overground" id="overgroundlist">Overground</option>
+                <option value="dlr" id="dlrlist">DLR</option>
+                <option value="tfl-rail" id="tflraillist">TfL Rail</option>
+            </select>
+
+            <div class="skipButtons">
+                <a href="#" class="previous">&laquo;</a>
+                <a href="#" class="next">&raquo;</a>
+            </div>
+            <input type="submit" name="" value="Submit!" class="submit">
+        </form>
+    </div>
+    <div class="status-div">
+        <h2 id="status-description"></h2>
+    </div>
+
+    <div class="giphy-div hidden">
+        <img src="" id="giphy-img" alt="giphy image according to line status" class="hidden-img">
+    </div>
+    <div id="error"></div>
+
+    <footer class="footer">
+        <p>Made with the blood, sweat, and tears of Eve, Art, Emily, and Kate.
+            <br> Rebuilt by Simon for learning purposes.
+            <br> Thanks for the inspiration guys!</p>
+    </footer>
+
+
+    <script src="dom.js"></script>
+    <script src="logic.js"></script>
+</body>
+
+</html>
